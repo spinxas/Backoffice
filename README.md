@@ -12,8 +12,9 @@ To compile the project, you will have to use the maven plugin for tomcat. To do 
 5. Run
 
 If you have tomcat installed in your system, you will need to go to the installation folder and conf folder you will have to adjust context.xml file to following:
-<?xml version='1.0' encoding='utf-8'?>
-<Context>
+
+    <?xml version='1.0' encoding='utf-8'?>
+    <Context>
 	<WatchedResource>WEB-INF/web.xml</WatchedResource>
 
     <Resource
@@ -37,4 +38,4 @@ If you have tomcat installed in your system, you will need to go to the installa
             minEvictableIdleTimeMillis="60000"
             url="jdbc:mysql://localhost:3306/uaicontacts" />
 
-</Context>
+     </Context>
